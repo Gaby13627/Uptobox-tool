@@ -1,0 +1,50 @@
+<img id="font" src="./src/background_sky.png">
+<div id="content">
+   <label id="Label-token" for="Tokentext">Token Uptobox:</label>
+   <input type="text" id="Token" name="Tokentext" minlength="35" maxlength="40" size="42">
+   <input type="button" value="Verifier" class="boutonToken" id="BToken">
+   <br><br>
+   <input type="radio" id="Remplacer" name="fichier" value="Renomer" checked>
+   <label for="Remplacer">Renomer des Fichiers</label>
+   <input type="radio" id="Renomer" name="fichier" value="Remplacer">
+   <label for="Renomer">Remplacer un caractère</label>
+   </br>
+   <div id="left">
+      <textarea id="textarea" rows="7" cols="30" placeholder="Lien Uptobox"></textarea>
+      <label id="linkcount">0 Lien</label><br>
+      <input type="button" value="Clear" id="ClearB"></br>
+      <div>
+         <label for="Ancien-Nom-Ep">Ancien nom Type jusqu'au numéro de l'épisode</label></br>
+         <input type="text" id="Ancien-Nom-Ep" name="Ancien-Nom-Ep" size="35"
+            placeholder="ex : Nom_de_la_serie_ep01"></br>
+         <label for="Type-Num">Format Type des numéros d'épisode</label></br>
+         <input type="number" id="Type-Num" name="Type-Num" placeholder="ex : 01"></br>
+      </div>
+      <div>
+         <input type="checkbox" id="SaiB" name="SaiB">
+         <label for="SaiB">Récupérer numéro de saison ?</label></br>
+         <label for="Ancien-Nom-Ep">Ancien nom Type jusqu'au numéro de saison</label></br>
+         <input type="text" id="Ancien-Nom-Sa" name="Ancien-Nom-Sa" size="35" placeholder="ex : Nom_de_la_serie_S01"
+            disabled></br>
+         <label for="Type-Sa">Format Type des numéros de saison</label></br>
+         <input type="number" id="Type-Sa" name="Type-Sa" placeholder="ex : 01" disabled></br>
+      </div>
+      <div id="New-name">
+         <span>Nouveau Nom Type</span></br>
+         <input type="text" name="Prefix" id="Prefix" placeholder="Prefix">
+         <input type="checkbox" name="Saisoncheck" id="Saisoncheck" disabled><label for="Saisoncheck">Sai</label>
+         <input type="text" name="Inter" id="Inter" placeholder="Inter" size="1">
+         <input type="checkbox" name="Numcheck" id="Numcheck" disabled checked><label for="Numcheck">Ep</label>
+         <input type="text" name="Suffixe" id="Suffixe" placeholder="Suffixe" size="5">
+         <input type="checkbox" name="Extension" id="Extension" checked>
+         <label for="Extension">Extension</label>
+      </div>
+   </div>
+   <div id="right">
+      <label>Remplacer</label>
+      <input id="Ancien-caractere" type="text" size="2" disabled>
+      <label>par</label>
+      <input id="Nouveau-caractere" type="text" size="2" disabled> <br>
+      <input type="button" value="Valider" id="Valider">
+   </div>
+</div>

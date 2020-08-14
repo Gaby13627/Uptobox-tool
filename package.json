@@ -1,0 +1,24 @@
+{
+  "name": "uptobox-tool",
+  "version": "1.0.0",
+  "description": "Un utilitaire pour Uptobox",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build-win": "electron-packager . --platform win32 --icon ./src/uptobox.ico"
+  },
+  "keywords": [
+    "Uptobox",
+    "link"
+  ],
+  "author": "Gaby13627",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "moment": "^2.27.0"
+  },
+  "devDependencies": {
+    "electron": "^9.2.0",
+    "electron-packager": "^15.0.0"
+  }
+}
